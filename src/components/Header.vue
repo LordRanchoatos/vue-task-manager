@@ -1,12 +1,12 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button />
+        <Button text="Add tasks" color="green"/>
     </header>
 </template>
 
 <script>
-import Button from './Button.vue'
+import Button from './Button'
 
 
 export default {
@@ -15,7 +15,7 @@ export default {
         title: String,
     }, 
     components: {
-        Button
+        Button,
     }
 }
 </script>
