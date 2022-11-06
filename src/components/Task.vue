@@ -16,7 +16,7 @@
         },
         methods: {
             onDelete(id) {
-                this.$emit('delete-task', task.id)
+                this.$emit('delete-task', id)
             }
         }
     }

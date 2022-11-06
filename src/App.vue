@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     deleteTask(id) {
-      this.tasks = this.tasks.filter((task) => this.tasks.id !== id )
+      console.log(id)
+      this.tasks = this.tasks.filter((task) => task.id !== id )
     }
   },
   created() {
