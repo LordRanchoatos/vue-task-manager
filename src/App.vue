@@ -22,9 +22,11 @@ export default {
   },
   methods: {
     deleteTask(id) {
-      console.log(id)
-      this.tasks = this.tasks.filter((task) => task.id !== id )
-    }
+      if (confirm('Are you sure?')){
+        console.log(id)
+        this.tasks = this.tasks.filter((task) => task.id !== id )
+      }
+    },
   },
   created() {
     this.tasks = [
