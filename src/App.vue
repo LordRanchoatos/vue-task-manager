@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       tasks: [] 
-    }
+    } 
   }, 
   methods: {
     deleteTask(id) {
@@ -27,7 +27,12 @@ export default {
       }
     }, 
     toggleReminder(id){
-      console.log('hey toggle')
+      console.log("id here:",id)
+      this.tasks = this.tasks.map((task) => 
+        task.id === id ? {
+          ...task, reminder: !task.reminder
+        } : task
+      )
     }
   },
   created() {
