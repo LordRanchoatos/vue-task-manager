@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button text="Add tasks" color="green"/>
+        <Button @toggle-add-task="$emit('toggle-add-task')" text="Add tasks" color="green"/>
     </header>
 </template>
 
@@ -9,10 +9,11 @@
 import Button from './Button'
 
 
-export default {
+export default { 
     name: 'Header',
     props: {
         title: String,
+        showAddTask: Boolean,
     }, 
     components: {
         Button,
