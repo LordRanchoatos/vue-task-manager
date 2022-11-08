@@ -37,6 +37,7 @@ export default {
     },  
     addTask(task){
       this.tasks = [...this.tasks, task]
+      this.showAddTask = !this.showAddTask
     },
     toggleReminder(id){
       console.log("id here:",id)
