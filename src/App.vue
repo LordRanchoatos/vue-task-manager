@@ -46,29 +46,15 @@ export default {
           ...task, reminder: !task.reminder
         } : task
       )
+    },
+    async fetchTasks() {
+      const res = await fetch('localhost:5000/tasks')
+      const data = await res.json()
+      return data
     }
   },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: 'Doctors Appointment',
-        day: "November 7th at 10.00am",
-        reminder: true,
-      },
-      {
-        id: 2,
-        text: 'Wedding',
-        day: "December 3th at 11.00am",
-        reminder: true,
-      },
-      {
-        id: 3,
-        text: 'Make daily github commits',
-        day: "November 5th at 8.00am",
-        reminder: false,
-      },
-    ]
+  async created() {
+    this.tasks = await this.fetchTasks()
   }
 }
 </script>
