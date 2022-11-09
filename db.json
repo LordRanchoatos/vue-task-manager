@@ -17,6 +17,18 @@
       "text": "Make daily github commits",
       "day": "November 5th at 8.00am",
       "reminder": false
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 4830,
+      "text": "RanchoAtos",
+      "day": "wed 9am",
+      "reminder": true
     }
   ]
 }
