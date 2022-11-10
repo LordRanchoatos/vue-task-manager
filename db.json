@@ -11,6 +11,18 @@
       "day": "30",
       "reminder": true,
       "id": 2
+    },
+    {
+      "text": "cook",
+      "day": "30",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "RanchoAtos",
+      "day": "weekend",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
